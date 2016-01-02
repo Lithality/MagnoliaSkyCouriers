@@ -1,0 +1,10 @@
+<DialogScript>
+<Dialogs>
+<Dialog name = "Staff Karin">
+<Speech>Welcome to Magnolia Air Couriers</Speech>
+</Dialog>
+<Dialog name = "Staff Rebe">
+<Speech>Oh hey, you must be the new-comer!</Speech>
+</Dialog>
+</Dialogs>
+</DialogScript>
