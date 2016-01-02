@@ -48,36 +48,9 @@
   <ItemGroup>
      <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
      <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\Crew.cs" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\CrewSelectionScript.cs" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\Dialog.cs" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\DialogManager.cs" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\DialogScript.cs" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\Elf.cs" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\Event.cs" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\EventManager.cs" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\Facility.cs" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\Fairy.cs" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\Human.cs" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\MainGame.cs" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\Race.cs" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\Ship.cs" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\UIManager.cs" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\VisEnvironment.cs" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\Were.cs" />
-     <Compile Include="Assets\Standard Assets (Mobile)\Scripts\define.cs" />
+     <Compile Include="Assets\Scripts\UIManager.cs" />
      <None Include="Assets\Demigiant\DOTween\readme.txt" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Multiply Culled.shader" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Background.shader" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Transparent Vertex Color.shader" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Miscellaneous Shaders\Mobile Detail.shader" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Reflective.shader" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Particle Shaders\Mobile Particles Additive Culled.shader" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Vertex Colored Shaders\Mobile Vertex Colored.shader" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap Only.shader" />
-     <None Include="Assets\Standard Assets (Mobile)\Shaders\Lightmap Shaders (Legacy)\Mobile Lightmap AlphaTest.shader" />
      <None Include="Assets\Scene_1.xml" />
-     <None Include="Assets\Standard Assets (Mobile)\Scenes\Scene_1.xml" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
@@ -88,7 +61,7 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="DOTween">
- <HintPath>C:/Users/Zeng/Documents/MagnoliaSkyCouriers/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ <HintPath>C:/Users/Zeng/Documents/GitHub/MagnoliaSkyCouriers/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
