@@ -9,8 +9,9 @@ public class DirectMover : AbstractMover
 {
 	[SerializeField]
 	private float _closenessThreshold = 1.0f;
-	
-	private Vector3 _destination;
+    [SerializeField]
+    private Animator animator;
+    private Vector3 _destination;
 	
 	void Awake()
 	{
@@ -22,13 +23,39 @@ public class DirectMover : AbstractMover
 	{
 		if (_isMoving)
 		{
-			//Debug.Log ("Move!");
-			Vector3 displacement = _speed * (_destination - transform.position).normalized * Time.deltaTime;
+            //Debug.Log ("Move!");
+            if (transform.position.x < _destination.x) //move right
+            {
+                if (Mathf.Abs(transform.position.x - _destination.x) > 2)
+                    animator.SetInteger("Direction", 3);
+                else {
+                    if (transform.position.y > _destination.y) //move front
+                        animator.SetInteger("Direction", 0);
+                    else if (transform.position.y < _destination.y) //move back
+                        animator.SetInteger("Direction", 2);
+                }
+            }
+            else if (transform.position.x > _destination.x) //move left
+            {
+                if (Mathf.Abs(transform.position.x - _destination.x) > 2)
+                    animator.SetInteger("Direction", 1);
+                else {
+                    if (transform.position.y > _destination.y) //move front
+                        animator.SetInteger("Direction", 0);
+                    else if (transform.position.y < _destination.y) //move back
+                        animator.SetInteger("Direction", 2);
+                }
+            }
+
+            Vector3 displacement = _speed * (_destination - transform.position).normalized * Time.deltaTime;
 			transform.position += displacement;
-			OnMoveUpdate();
+            
+
+            OnMoveUpdate();
 			if (Vector3.Distance(transform.position, _destination) <= _closenessThreshold)
 			{
-				_isMoving = false;
+                animator.SetInteger("Direction", 4); //Idle
+                _isMoving = false;
 				OnMoveComplete();
 			}
 		}
@@ -47,7 +74,8 @@ public class DirectMover : AbstractMover
 	
 	public override void StopMoving()
 	{
-		_isMoving = false;
+        //animator.SetInteger("Direction", 4);
+        _isMoving = false;
 	}
 	
 	public override void CalculatePath()
